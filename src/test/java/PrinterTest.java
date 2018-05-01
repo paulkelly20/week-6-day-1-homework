@@ -42,7 +42,6 @@ public class PrinterTest {
     @Test
     public void testPaperAfterPrintJob(){
         testprinter.checkIfCanPrint(testprinter.paperNeeded(4,5));
-
         assertEquals(30, testprinter.getPaper());
     }
 

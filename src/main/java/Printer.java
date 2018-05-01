@@ -23,12 +23,15 @@ public class Printer {
 
     public boolean enoughPaperInPrinter(int pages_needed) {
         if (this.paper > pages_needed)
-        {return true;} else {return false;}
+            {return true;}
+        else {return false;}
     }
 
     public boolean enoughTonerInPrinter(int pages_needed){
         if (this.toner > pages_needed)
-        {return true;} else {return false;}
+            {return true;}
+        else
+            {return false;}
     }
 
     public void print(int pages_needed){
@@ -43,8 +46,8 @@ public class Printer {
 
     }
 
-    public int fillPaper(){
-        return this.paper = 100;
+    public void fillPaper(){
+         this.paper = 100;
     }
 
 

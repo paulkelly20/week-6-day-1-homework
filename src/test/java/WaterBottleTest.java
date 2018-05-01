@@ -21,18 +21,23 @@ public class WaterBottleTest {
 
     @Test
     public void testVolumeAfterOneDrink(){
-        bottle.Drink();
-        bottle.Drink();
-        bottle.Drink();
-        bottle.Drink();
-        bottle.Drink();
-        bottle.Drink();
-        bottle.Drink();
-        bottle.Drink();
-        bottle.Drink();
-        bottle.Drink();
-        bottle.Drink();
-        bottle.Drink();
+        bottle.drink();
+        assertEquals(90, bottle.getVolume());
+    }
+
+    @Test
+    public void testVolumeAfterMultipleDrinks(){
+        bottle.drink();
+        bottle.drink();
+        bottle.drink();
+        bottle.drink();
+        bottle.drink();
+        bottle.drink();
+        bottle.drink();
+        bottle.drink();
+        bottle.drink();
+        bottle.drink();
+        bottle.drink();
         assertEquals(0, bottle.getVolume());
     }
 
